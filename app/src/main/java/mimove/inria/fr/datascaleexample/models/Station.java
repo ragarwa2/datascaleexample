@@ -40,7 +40,7 @@ public class Station extends GoFlowLocation {
 	 */
 	public Station(String id, double latitude, double longitude) {
 		super();
-		super.setId(id);
+		try {super.setId(id);}catch (Exception e){e.printStackTrace();}
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}

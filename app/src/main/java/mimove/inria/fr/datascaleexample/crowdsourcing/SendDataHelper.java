@@ -56,6 +56,7 @@ public class SendDataHelper {
             // reuse existing pushtask, but create if failure at start/runtime
             GoFlowPushTask<CSMeasurement> _pushTaskMeasurment;
             Log.d(Tag, "h1");
+            Log.d(Tag, ""+csMeasurement.getCrowdSourcedLocation().getId());
             try {
                 CSMeasurementPushCallback callback = new CSMeasurementPushCallback();
                 _pushTaskMeasurment = new GoFlowPushTask<CSMeasurement>(_id, CSMeasurement.class, callback);

@@ -69,7 +69,7 @@ public class MainActivity extends Activity {
                 }
             } else {
                 Log.d(Tag, "h2");
-                Station station = new Station("uniqueID", 0.0, 0.0);
+                Station station = new Station("uniqueID", 10.0, 2.0);
                 //Log.d(Tag, String.valueOf(location.getLatitude()));
                 SendDataHelper.getInstance().sendMoodToServer(mood, station);
             }
